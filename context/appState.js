@@ -17,7 +17,7 @@ const AppState = props => {
             },
             {
                 id: 2,
-                nombre: 'Servicios Juridicos',
+                nombre: 'Servicios Jurídicos',
                 url: '/servicios-juridicos'
             },
             {
@@ -27,7 +27,7 @@ const AppState = props => {
             },
             {
                 id: 4,
-                nombre: 'Contactame',
+                nombre: 'Contáctame',
                 url: '/contactame'
             },
         ],

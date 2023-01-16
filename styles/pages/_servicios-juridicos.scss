@@ -1,11 +1,11 @@
-.container-servicios {
-    width: calc( 100% - 72px );
+.container-servicios-juridicos {
+    width: calc( 100% - 72px);
     height: auto;
     min-height: 100vh;
     padding: 0 36px;
     background-color: $grey-100;
     @media (max-width: 800px) {
-        width: calc( 100% - 24px );
+        width: calc( 100% - 24px);
         padding: 12px;
     }
 }

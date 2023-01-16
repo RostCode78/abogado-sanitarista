@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&family=Manrope:wght@300;400;500&display=swap');
 @import "./config/extend";
 @import "./config/variables";
-
 * {
     padding: 0;
     margin: 0;
@@ -23,8 +22,8 @@ body {
 }
 
 .content-whatsapp-desktop {
-    width: 46px;
-    height: 46px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     bottom: 36px;
     left: 36px;
@@ -36,16 +35,20 @@ body {
     &:hover {
         transform: scale(1.1);
     }
+    @media ( max-width: 800px) {
+        display: none;
+    }
 }
 
-// PAGINAS
+// INDEX
 @import "./pages/index";
 @import "./../components/PaginaInicio/Header/header";
-// 
+@import "./../components/PaginaInicio/Servicios/servicios";
+// CONTACTAME
 @import "./pages/contactame";
-// 
+// JURISTA | ABOUT ME
 @import "./pages/jurista";
-// 
+// SERVICIOS JURIDICOS
 @import "./pages/servicios-juridicos";
 // 
 // COMPONENTS

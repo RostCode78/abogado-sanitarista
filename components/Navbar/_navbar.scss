@@ -1,14 +1,15 @@
 .container-navbar {
-    width: calc( 100% - 72px );
+    width: calc( 100% - 72px);
     height: auto;
     min-height: 24px;
     padding: 12px 36px;
-    background-color: rgba( $grey-100, 0.4 );
+    background-color: rgba( $grey-100, 0.5);
+    backdrop-filter: blur(2px);
     position: sticky;
     z-index: 10;
     top: 0;
     @media (max-width: 800px) {
-        width: calc( 100% - 24px );
+        width: calc( 100% - 24px);
         padding: 12px;
     }
     .content-desktop {
@@ -29,7 +30,8 @@
             @extend %flex-center-row;
             .content-href {
                 padding: 6px 18px;
-                background-color: rgba( $grey-100, 0.0 );transition: all .2s ease-in-out;
+                background-color: rgba( $grey-100, 0.0);
+                transition: all .2s ease-in-out;
                 cursor: pointer;
                 @extend %flex-center;
                 p {
@@ -37,7 +39,7 @@
                     @extend %regular-regular;
                 }
                 &:hover {
-                    background-color: rgba( $blue-200, 0.5 );
+                    background-color: rgba( $cafe-200, 0.5);
                 }
             }
         }

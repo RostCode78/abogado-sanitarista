@@ -10,8 +10,8 @@ const Layout = ({ children }) => {
             <div className="content-whatsapp-desktop">
                 <Image
                 src="./whatsapp.svg"
-                width={32}
-                height={32}
+                width={50}
+                height={50}
                 alt='whatsapp'
                 />
             </div>
