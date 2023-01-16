@@ -1,0 +1,87 @@
+.container-header {
+    width: 100%;
+    height: auto;
+    padding: 24px 0;
+    justify-content: space-between;
+    @extend %flex-center-row;
+    @media ( max-width: 800px ) {
+        flex-direction: column;
+    }
+    .content-left {
+        width: auto;
+        height: auto;
+        max-width: 464px;
+        min-height: 200px;
+        @extend %flex-center-column;
+        h1 {
+            max-width: 350px;
+            font-family: 'League Spartan', sans-serif;
+            font-weight: 600;
+            font-size: 48px;
+            color: $grey-900;
+            text-align: center;
+            @media ( max-width: 800px ) {
+                font-weight: 600;
+                font-size: 36px;
+            }
+        }
+        h2 {
+            font-family: 'League Spartan', sans-serif;
+            font-weight: 300;
+            font-size: 28px;
+            margin-top: 12px;
+            color: $cafe-600;
+            text-align: center;
+            @media ( max-width: 800px ) {
+                order: -1;
+                margin-top: 0px;
+                margin-bottom: 12px;
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+        button {
+            width: auto;
+            height: auto;
+            padding: 6px 24px;
+            margin-top: 36px;
+            background-color: $cafe-500;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: all .1s ease-in-out;
+            @extend %flex-center-row;
+            p {
+                font-family: 'League Spartan', sans-serif;
+                font-weight: 500;
+                font-size: 32px;
+                color: $grey-100;
+            }
+            &:hover {
+                background-color: $cafe-600;
+            }
+            @media ( max-width: 800px ) {
+                margin-top: 24px;
+            }
+        }
+    }
+    .content-right {
+        width: 790px;
+        height: 525px;
+        background-color: $grey-900;
+        @extend %flex-center;
+        @media ( max-width: 800px ) {
+            display: none;
+        }
+    }
+    .content-right-responsive {
+        width: 280px;
+        height: 350px;
+        background-color: $grey-100;
+        display: none;
+        @extend %flex-center;
+        @media ( max-width: 800px ) {
+            display: flex;
+        }
+    }
+}
