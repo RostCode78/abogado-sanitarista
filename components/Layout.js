@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
             <MenuLateral/>
             <div className="content-whatsapp-desktop">
                 <Image
-                src="./whatsapp.svg"
+                src="/whatsapp.svg"
                 width={50}
                 height={50}
                 alt='whatsapp'

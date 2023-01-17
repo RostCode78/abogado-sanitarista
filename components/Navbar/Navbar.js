@@ -18,7 +18,7 @@ const Navbar = () => {
 
         <div className="content-logo">
             <Image
-              src="./logo.svg"
+              src="/logo.svg"
               width={50}
               height={60}
               alt='LS'
@@ -42,7 +42,7 @@ const Navbar = () => {
 
         <div className="content-whatsapp">
             <Image
-              src="./whatsapp.svg"
+              src="/whatsapp.svg"
               width={32}
               height={32}
               alt='whatsapp'
@@ -51,7 +51,7 @@ const Navbar = () => {
 
         <div className="content-logo">
             <Image
-              src="./logo-mobile.svg"
+              src="/logo-mobile.svg"
               width={200}
               height={46}
               alt='LS'
@@ -60,10 +60,10 @@ const Navbar = () => {
 
         <div className="content-menu" onClick={ () => SwitchParaMenu(!menu_abierto) }>
             <Image
-              src={ menu_abierto ? "./x.svg" : "./menu.svg" }
+              src={ menu_abierto ? "/x.svg" : "/menu.svg" }
               width={32}
               height={32}
-              alt='='
+              alt='menu'
             />
         </div>
 

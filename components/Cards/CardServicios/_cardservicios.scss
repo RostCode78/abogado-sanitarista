@@ -1,0 +1,57 @@
+.container-card-servicios {
+    width: calc( 50% - 48px);
+    min-height: calc( 325px - 24px);
+    padding: 12px;
+    background-color: $grey-100;
+    margin: 12px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    justify-content: space-between;
+    @extend %flex-center-column;
+    &:hover {
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+        .texto {
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+    &:active {
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+    }
+    @media ( max-width: 800px) {
+        width: calc( 100% - 48px);
+    }
+    .imagen {
+        width: 100%;
+        height: 245px;
+        background-color: $cafe-200;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .texto {
+        width: 100%;
+        height: 42px;
+        justify-content: space-between;
+        @extend %flex-center-row;
+        @media ( max-width: 800px) {
+            flex-direction: column;
+        }
+        p {
+            color: $grey-900;
+            font-size: 16px;
+            @extend %small-medium;
+        }
+        span {
+            color: $blue-300;
+            font-size: 16px;
+            @extend %flex-center-row;
+            @extend %small-regular;
+        }
+    }
+}
