@@ -27,10 +27,11 @@ body {
     position: fixed;
     bottom: 36px;
     left: 36px;
-    border-radius: 25px;
+    border-radius: 50px;
     background-color: $grey-100;
     cursor: pointer;
     transition: all .1s ease-in-out;
+    z-index: 10;
     @extend %flex-center;
     &:hover {
         transform: scale(1.1);
@@ -44,6 +45,7 @@ body {
 @import "./pages/index";
 @import "./../components/PaginaInicio/Header/header";
 @import "./../components/PaginaInicio/Servicios/servicios";
+@import "./../components/PaginaInicio/ServicioEspecial/servicioespecial";
 // CONTACTAME
 @import "./pages/contactame";
 // JURISTA | ABOUT ME

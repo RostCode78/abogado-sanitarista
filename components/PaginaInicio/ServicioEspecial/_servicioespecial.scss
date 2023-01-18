@@ -1,0 +1,100 @@
+.container-servicio-especial {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    margin: 48px 0;
+    position: relative;
+    justify-content: space-around;
+    @extend %flex-center-row;
+    .left {
+        width: 632px;
+        height: 500px;
+        background-color: #94d2f1;
+        position: relative;
+        .logo {
+            width: 154px;
+            height: 116px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: $grey-100;
+            @extend %flex-center;
+            img {
+                width: 90%;
+                height: 90%;
+                object-fit: contain;
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .right {
+        width: 496px;
+        height: 450px;
+        align-items: flex-start;
+        @extend %flex-center-column;
+        .titulo {
+            width: 100%;
+            height: auto;
+            margin-bottom: 48px;
+            h2 {
+                color: $grey-900;
+                font-weight: 600;
+                @extend %tittle-seccion;
+            }
+            h3 {
+                color: $grey-800;
+                font-weight: 500;
+                @extend %tittle-item;
+            }
+        }
+        .content {
+            width: 100%;
+            height: auto;
+            align-items: flex-start;
+            @extend %flex-center-column;
+            .item {
+                width: 100%;
+                height: auto;
+                margin: 12px 0;
+                background-color: $cafe-200;
+                .titulo-item {
+                    width: 100%;
+                    height: auto;
+                    padding: 6px 0;
+                    h4 {
+                        color: $grey-800;
+                        @extend %regular-medium;
+                    }
+                }
+                .text-item {
+                    width: 100%;
+                    height: auto;
+                    align-items: flex-start;
+                    padding: 0 6px;
+                    @extend %flex-center-column;
+                    .item {
+                        width: calc( 100% - 12px);
+                        height: auto;
+                        justify-content: flex-start;
+                        @extend %flex-center-row;
+                        .point {
+                            width: 3px;
+                            height: 3px;
+                            margin-right: 6px;
+                            background-color: $grey-900;
+                            border-radius: 25px;
+                        }
+                        p {
+                            color: $grey-700;
+                            @extend %regular-regular;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
