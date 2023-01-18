@@ -9,7 +9,7 @@ const Header = () => {
             <button>
                 <p>Haz una consulta</p>
                 <Image
-                    src="./cheveron-right.svg"
+                    src="/cheveron-right.svg"
                     width={24}
                     height={24}
                     alt='>'
@@ -18,7 +18,7 @@ const Header = () => {
         </div>
         <div className="content-right">
             <Image
-                src="./lex&sa.svg"
+                src="/lex&sa.svg"
                 width={625}
                 height={150}
                 alt='Lex & Sa'
@@ -26,7 +26,7 @@ const Header = () => {
         </div>
         <div className="content-right-responsive">
             <Image
-                src="./logo.svg"
+                src="/logo.svg"
                 width={280}
                 height={350}
                 alt='Lex & Sa'
