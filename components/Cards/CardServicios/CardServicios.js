@@ -4,6 +4,13 @@ import Link from "next/link";
 const CardServicios = ({ datos }) => {
     return (
         <Link href={`/servicio/${ datos.url }?id=${ datos.id }`} as={`/servicio/${ datos.url }?id=${ datos.id }`} className="container-card-servicios">
+            <div className="icon">
+                <Image
+                    src="/cursor-click.svg"
+                    width={18}
+                    height={18}
+                />
+            </div>
             <div className="imagen">
                 <img src={ datos.imagen } alt={ datos.nombre } />
             </div>
