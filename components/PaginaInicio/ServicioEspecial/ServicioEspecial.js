@@ -25,10 +25,37 @@ const ServicioEspecial = () => {
                         </div>
 
                         <div className="text-item">
+
+                            <div className="line-servicio-especial"></div>
+
                             <div className="item">
                                 <div className="point"></div>
                                 <p>Cumplimiento de normas y prevención de riesgos que pueden derivar en conflictos legales.</p>
                             </div>
+
+                            <div className="line-servicio-especial"></div>
+
+                            <div className="item">
+                                <div className="point"></div>
+                                <p>Asesoría continua para la prevención del conflicto médico -paciente.</p>
+                            </div>
+
+                            <div className="line-servicio-especial"></div>
+
+                            <div className="item">
+                                <div className="point"></div>
+                                <p>Defensa legal en juicios o procedimientos por responsabilidad médica.</p>
+                            </div>
+
+                            <div className="line-servicio-especial"></div>
+
+                            <div className="item">
+                                <div className="point"></div>
+                                <p>Regulación de la planilla de colaboradores.</p>
+                            </div>
+
+                            <div className="line-servicio-especial"></div>
+
                         </div>
 
                     </div>
@@ -40,10 +67,16 @@ const ServicioEspecial = () => {
                         </div>
                         
                         <div className="text-item">
+
+                            <div className="line-servicio-especial"></div>
+
                             <div className="item">
                                 <div className="point"></div>
-                                <p>Cumplimiento de normas y prevención de riesgos que pueden derivar en conflictos legales.</p>
+                                <p>Tramite de licencias y avisos de funcionamiento para evitar multas y suspensión de actividades por parte de autoridades como COFEPRIS.</p>
                             </div>
+
+                            <div className="line-servicio-especial"></div>
+                            
                         </div>
 
                     </div>
