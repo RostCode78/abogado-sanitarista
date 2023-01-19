@@ -1,0 +1,45 @@
+.container-comunidad {
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    margin-top: 48px;
+    .content-titulo {
+        width: 100%;
+        height: auto;
+        min-height: 50px;
+        h2 {
+            color: $grey-900;
+            @extend %tittle-seccion;
+        }
+        h3 {
+            color: $grey-800;
+            @extend %medium-medium;
+        }
+        @media ( max-width: 800px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h2 {
+                width: 80%;
+                text-align: center;
+            }
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+    .content-comunidad {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        flex-wrap: wrap;
+        margin-top: 36px;
+        @extend %flex-center-row;
+        .item {
+            width: calc( 50% - 12px);
+            height: 150px;
+            background-color: $grey-100;
+        }
+    }
+}

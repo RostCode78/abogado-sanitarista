@@ -37,7 +37,10 @@ body {
         transform: scale(1.1);
     }
     @media ( max-width: 800px) {
-        display: none;
+        width: 40px;
+        height: 40px;
+        bottom: 18px;
+        left: 18px;
     }
 }
 
@@ -46,6 +49,7 @@ body {
 @import "./../components/PaginaInicio/Header/header";
 @import "./../components/PaginaInicio/Servicios/servicios";
 @import "./../components/PaginaInicio/ServicioEspecial/servicioespecial";
+@import "./../components/PaginaInicio/Comunidad/Comunidad";
 // CONTACTAME
 @import "./pages/contactame";
 // JURISTA | ABOUT ME
@@ -56,3 +60,4 @@ body {
 @import "./../components/Navbar/navbar";
 @import "./../components/MenuLateral/menulateral";
 @import "./../components/Cards/CardServicios/cardservicios";
+@import "./../components/Cards/CardComunidad/cardcomunidad";

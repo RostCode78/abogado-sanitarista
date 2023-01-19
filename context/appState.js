@@ -181,6 +181,32 @@ const AppState = props => {
                     }
                 ]
             }
+        ],
+        opciones_comunidad: [
+            {
+                id: 1,
+                titulo: "Del expediente clínico.",
+                texto: "Norma Oficial Mexicana NOM-004-SSA3-2012",
+                url: "https://www.dof.gob.mx/nota_detalle.php?codigo=5272787&fecha=15/10/2012#gsc.tab=0"
+            },
+            {
+                id: 2,
+                titulo: "Para la práctica de la anestesiología.",
+                texto: "Norma Oficial Mexicana NOM-006-SSA3-2011",
+                url: "https://www.dof.gob.mx/nota_detalle.php?codigo=5240668&fecha=23/03/2012#gsc.tab=0"
+            },
+            {
+                id: 3,
+                titulo: "Para la atención de la mujer durante el embarazo, parto y puerperio, y de la persona recién nacida.",
+                texto: "Norma Oficial Mexicana NOM-007-SSA2-2016",
+                url: "https://www.gob.mx/cms/uploads/attachment/file/512098/NOM-007-SSA2-2016.pdf"
+            },
+            {
+                id: 4,
+                titulo: "Que establece los requisitos mínimos de infraestructura y equipamiento de establecimientos para la atención médica de pacientes ambulatorios.",
+                texto: "Norma Oficial Mexicana NOM-005-SSA3-2018",
+                url: "https://dof.gob.mx/nota_detalle.php?codigo=5596456&fecha=09/07/2020#gsc.tab=0"
+            },
         ]
     }
 
@@ -199,7 +225,8 @@ const AppState = props => {
                 opciones_menu: state.opciones_menu,
                 menu_abierto: state.menu_abierto,
                 SwitchParaMenu,
-                opciones_servicios: state.opciones_servicios
+                opciones_servicios: state.opciones_servicios,
+                opciones_comunidad: state.opciones_comunidad
             }}
         >
             { props.children }

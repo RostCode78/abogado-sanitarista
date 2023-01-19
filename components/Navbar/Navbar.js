@@ -40,14 +40,7 @@ const Navbar = () => {
       </div>
       <div className="content-mobile">
 
-        <div className="content-whatsapp">
-            <Image
-              src="/whatsapp.svg"
-              width={32}
-              height={32}
-              alt='whatsapp'
-            />
-        </div>
+        <div className="content-whatsapp"></div>
 
         <div className="content-logo">
             <Image
