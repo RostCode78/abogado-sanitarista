@@ -15,7 +15,7 @@
             color: $grey-800;
             @extend %medium-medium;
         }
-        @media ( max-width: 800px) {
+        @media ( max-width: 980px) {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -36,7 +36,7 @@
         flex-wrap: wrap;
         margin-top: 36px;
         @extend %flex-center-row;
-        @media( max-width: 800px) {
+        @media( max-width: 980px) {
             flex-direction: column;
         }
     }
