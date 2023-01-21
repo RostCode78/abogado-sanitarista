@@ -29,7 +29,7 @@
         width: auto;
         height: auto;
         position: absolute;
-        z-index: 2;
+        z-index: 1;
         @extend %flex-center-column;
         h2 {
             color: $grey-900;

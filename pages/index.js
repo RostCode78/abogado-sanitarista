@@ -4,7 +4,6 @@ import Servicios from "../components/PaginaInicio/Servicios/Servicios";
 import ServicioEspecial from "../components/PaginaInicio/ServicioEspecial/ServicioEspecial";
 import Comunidad from "../components/PaginaInicio/Comunidad/Comunidad";
 import Jurista from "../components/PaginaInicio/Jurista/Jurista";
-import SeccionContacto from "../components/PaginaInicio/Contacto/SeccionContacto";
 
 const index = () => {
   return (
@@ -15,7 +14,6 @@ const index = () => {
             <ServicioEspecial/>
             <Comunidad/>
             <Jurista/>
-            <SeccionContacto/>
         </div>
     </Layout>
   )

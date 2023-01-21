@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Navbar from "./Navbar/Navbar";
 import MenuLateral from "./MenuLateral/MenuLateral";
+import Footer from "./Footer/Footer";
+import SeccionContacto from "./PaginaInicio/Contacto/SeccionContacto";
 
 const Layout = ({ children }) => {
     return (
@@ -16,6 +18,8 @@ const Layout = ({ children }) => {
                 />
             </div>
             <main>{ children }</main>
+            <SeccionContacto/>
+            <Footer/>
         </>
     )
 }

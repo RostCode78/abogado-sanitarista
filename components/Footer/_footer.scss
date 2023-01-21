@@ -1,0 +1,22 @@
+.container-footer {
+    width: calc( 100% - 48px );
+    height: auto;
+    min-height: 75px;
+    margin-top: 60px;
+    padding: 0 24px;
+    background-color: $cafe-400;
+    @extend %flex-center-column;
+    p {
+        color: $grey-900;
+        @extend %regular-regular;
+    }
+    span {
+        color: $grey-900;
+        @extend %regular-regular;
+        a {
+            color: $blue-400;
+            text-decoration: underline;
+            @extend %regular-regular;
+        }
+    }
+}
