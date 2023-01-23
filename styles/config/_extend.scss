@@ -1,3 +1,14 @@
+/*=================
+=    CONTAINER    =
+=================*/
+
+%container {
+    width: calc( 100% - 72px );
+    height: auto;
+    min-height: 600px;
+    padding: 0 36px;
+}
+
 /*===================
         Flex
 ===================*/

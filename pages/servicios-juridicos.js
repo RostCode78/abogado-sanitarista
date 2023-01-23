@@ -1,10 +1,13 @@
 import Layout from "../components/Layout";
+import Servicios from "../components/PaginaInicio/Servicios/Servicios";
+import ServicioEspecial from "../components/PaginaInicio/ServicioEspecial/ServicioEspecial";
 
 const servicios = () => {
   return (
     <Layout>
       <div className="container-servicios-juridicos">
-          <h1>Servicios Juridicos</h1>
+            <Servicios/>
+            <ServicioEspecial/>
       </div>
     </Layout>
   )

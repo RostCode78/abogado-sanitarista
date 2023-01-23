@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     right: -100%;
-    z-index: 2;
+    z-index: 3;
     background-color: rgba( $grey-900, 0.8 );
     transition: all .2s ease-in-out;
     @extend %flex-center-column;

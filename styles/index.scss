@@ -8,6 +8,7 @@
 }
 
 body {
+    background-color: $grey-100;
     &::-webkit-scrollbar {
         width: 8px;
     }
@@ -64,3 +65,5 @@ body {
 @import "./../components/Cards/CardServicios/cardservicios";
 @import "./../components/Cards/CardComunidad/cardcomunidad";
 @import "./../components/Footer/footer";
+// SERVICIOS
+@import "./pages/servicios"
