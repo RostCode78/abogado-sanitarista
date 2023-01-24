@@ -1,0 +1,49 @@
+.container-modal-zoom {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($grey-900, 0.80);
+    position: fixed;
+    top: 0;
+    z-index: 1002;
+    @extend %flex-center;
+    .boton-cerrar {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background-color: $grey-100;
+        border-radius: 25px;
+        z-index: 20;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        @extend %flex-center;
+        &:hover {
+            background-color: $grey-300;
+        }
+    }
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .react-transform-wrapper,
+    .transform-component-module_wrapper__1_Fgj {
+        z-index: 10;
+    }
+    .content-imagen {
+        width: 50vw;
+        height: 85vh;
+        @media(max-width: 800px) {
+            width: 95vw;
+            height: 90vh;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}

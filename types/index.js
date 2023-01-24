@@ -1,1 +1,4 @@
 export const SWITCH_MENU = "SWITCH_MENU";
+// Modal Zoom
+export const ABRIR_MODAL_ZOOM = 'ABRIR_MODAL_ZOOM';
+export const GUARDAR_IMAGEN_ZOOM = 'GUARDAR_IMAGEN_ZOOM';

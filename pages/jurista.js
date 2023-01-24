@@ -1,6 +1,19 @@
+import { useContext } from "react";
+import appContext from "../context/appContext";
 import Layout from "../components/Layout";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from "swiper";
+// Import Swiper styles
+import 'swiper/css';
+import "swiper/css/pagination";
 
 const jurista = () => {
+
+  const ContextApp = useContext(appContext);
+  const {
+    MostrarModalZoom,
+    GuardarImagenZoom
+  } = ContextApp;
 
   const Opciones = [
     {
@@ -51,7 +64,54 @@ const jurista = () => {
       id: 12,
       texto: "Diplomado en Derecho Médico."
     },
+  ];
+
+  const Diplomas = [
+    {
+      id: 1,
+      url_img: 'https://i.imgur.com/RpFMR9Q.jpg',
+      alt: "Prevención del conflicto contra los profesionales de la salud."
+    },
+    {
+      id: 2,
+      url_img: 'https://i.imgur.com/eEzNRMv.jpg',
+      alt: "Malpraxis y responsabilidad médica"
+    },
+    {
+      id: 3,
+      url_img: 'https://i.imgur.com/a1HFJl8.jpg',
+      alt: "Diploma - Universidad La Salle Nezahualcóyotl"
+    },
+    {
+      id: 4,
+      url_img: 'https://i.imgur.com/1OaeDpz.jpg',
+      alt: "Diplomado Especializado en Derecho Médico"
+    },
+  ];
+
+  const ImageSlider = [
+    {
+      id: 1,
+      url_img: "https://i.imgur.com/y1OXuyf.jpg"
+    },
+    {
+      id: 2,
+      url_img: "https://i.imgur.com/pCjCu3f.jpg"
+    },
+    {
+      id: 3,
+      url_img: "https://i.imgur.com/JNvzYQN.jpg"
+    },
+    {
+      id: 4,
+      url_img: "https://i.imgur.com/aclHMWi.jpg"
+    },
   ]
+
+  const OnClickOpenZoom = (e) => {
+      GuardarImagenZoom(e);
+      MostrarModalZoom(true);
+  }
 
   return (
     <Layout>
@@ -66,7 +126,7 @@ const jurista = () => {
               <h2>Especialista en Derecho Sanitario y Derecho Médico.</h2>
             </div>
 
-            <div className="imagen">
+            <div className="imagen" onClick={ () => OnClickOpenZoom( "https://i.imgur.com/x0Lag4A.png" ) }>
               <img src="https://i.imgur.com/x0Lag4A.png" alt="Selfie" />
             </div>
 
@@ -87,13 +147,51 @@ const jurista = () => {
 
           </div>
 
-          <div className="right">
+          <div className="right" onClick={ () => OnClickOpenZoom( "https://i.imgur.com/x0Lag4A.png" ) }>
             <img src="https://i.imgur.com/x0Lag4A.png" alt="Selfie" />
           </div>
 
         </div>
 
-        <div className="certificados"></div>
+        <div className="certificados">
+            <div className="content-titulo">
+                <h2>Diplomas y constancias</h2>
+            </div>
+            <div className="content-images">
+                { Diplomas.map( e => (
+                  <div className="item" key={ e.id } onClick={ () => OnClickOpenZoom( e.url_img ) }>
+                    <img src={ e.url_img } alt={ e.alt } />
+                  </div>
+                ))}
+            </div>
+        </div>
+
+        <div className="slider">
+            <div className="content-titulo">
+                <h2>Iustitia est constants et perpetua voluntas ius suum cuique tribuere.</h2>
+            </div>
+            <div className="content">
+            <Swiper
+              loop
+              autoplay={{ 
+                  delay: 8000,
+                  disableOnInteraction: false 
+              }}
+              speed={500}
+              pagination={true} 
+              modules={[Pagination]} 
+              className="mySwiper"
+            >
+              { ImageSlider.map( e => (
+                <SwiperSlide key={ e.id }>
+                  <div className="content-slide-swiper" onClick={ () => OnClickOpenZoom( e.url_img ) }>
+                      <img loading="lazy" src={ e.url_img } alt={`Imagen-${ e.id }`} />
+                  </div>
+                </SwiperSlide>
+              ))}
+          </Swiper>
+            </div>
+        </div>
 
       </div>
     </Layout>

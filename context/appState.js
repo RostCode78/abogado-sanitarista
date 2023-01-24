@@ -3,7 +3,9 @@ import appReducer from "./appReducer";
 import appContext from "./appContext";
 
 import {
-    SWITCH_MENU
+    SWITCH_MENU,
+    ABRIR_MODAL_ZOOM,
+    GUARDAR_IMAGEN_ZOOM
 } from './../types/index';
 
 const AppState = props => {
@@ -207,7 +209,9 @@ const AppState = props => {
                 texto: "Norma Oficial Mexicana NOM-005-SSA3-2018",
                 url: "https://dof.gob.mx/nota_detalle.php?codigo=5596456&fecha=09/07/2020#gsc.tab=0"
             },
-        ]
+        ],
+        mostrarmodalzoom: false,
+        guardarimagenzoom: ""
     }
 
     const [state, dispatch] = useReducer(appReducer, initialState);
@@ -219,6 +223,20 @@ const AppState = props => {
         })
     }
 
+    const MostrarModalZoom = bool => {
+        dispatch({
+            type: ABRIR_MODAL_ZOOM,
+            payload: bool
+        })
+    }
+
+    const GuardarImagenZoom = string => {
+        dispatch({
+            type: GUARDAR_IMAGEN_ZOOM,
+            payload: string
+        })
+    }
+
     return (
         <appContext.Provider
             value={{
@@ -226,7 +244,11 @@ const AppState = props => {
                 menu_abierto: state.menu_abierto,
                 SwitchParaMenu,
                 opciones_servicios: state.opciones_servicios,
-                opciones_comunidad: state.opciones_comunidad
+                opciones_comunidad: state.opciones_comunidad,
+                mostrarmodalzoom: state.mostrarmodalzoom,
+                MostrarModalZoom,
+                guardarimagenzoom: state.guardarimagenzoom,
+                GuardarImagenZoom
             }}
         >
             { props.children }
