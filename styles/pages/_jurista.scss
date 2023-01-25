@@ -153,13 +153,15 @@
                     }
                 }
             }
+            @media ( max-width: 800px) {
+                width: 100%;
+            }
         }
         .right {
             width: calc( 60% - 24px);
             height: auto;
             min-height: calc( 250px - 24px);
             padding: 12px;
-            background-color: #498ec2;
             justify-content: flex-start;
             align-items: flex-start;
             @extend %flex-center-column;
@@ -167,7 +169,117 @@
                 width: 100%;
                 height: auto;
                 min-height: 35px;
-                background-color: #99c3e4;
+                margin-bottom: 24px;
+                p {
+                    color: $grey-800;
+                    @extend %medium-regular;
+                    span {
+                        @extend %medium-regular;
+                        &.negritas {
+                            @extend %medium-medium;
+                        }
+                        &.negro {
+                            color: $grey-900;
+                        }
+                        &.azul {
+                            color: $blue-300;
+                        }
+                    }
+                }
+                @media ( max-width: 800px) {
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+            .item-list {
+                width: 100%;
+                height: auto;
+                min-height: 35px;
+                margin-bottom: 24px;
+                @extend %flex-center-column;
+                .titulo {
+                    width: 100%;
+                    height: auto;
+                    justify-content: flex-start;
+                    @extend %flex-center-row;
+                    .line {
+                        width: 12px;
+                        height: 2px;
+                        background-color: $grey-900;
+                        margin-right: 6px;
+                    }
+                    p {
+                        color: $grey-900;
+                        @extend %medium-medium;
+                    }
+                    @media ( max-width: 800px) {
+                        justify-content: center;
+                        border: none;
+                        .line {
+                            display: none;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+                .list {
+                    width: calc( 100% - 24px );
+                    height: auto;
+                    padding-left: 24px;
+                    justify-content: flex-start;
+                    @extend %flex-center-column;
+                    .item-list {
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 6px;
+                        justify-content: flex-start;
+                        @extend %flex-center-row;
+                        .circle {
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 25px;
+                            background-color: $grey-900;
+                            margin-right: 6px;
+                        }
+                        p {
+                            color: $grey-800;
+                            @extend %regular-medium;
+                        }
+                    }
+                    @media ( max-width: 800px) {
+                        width: 100%;
+                        padding-left: 0;
+                        justify-content: center;
+                        border: none;
+
+                        .item-list {
+                            width: calc( 100% - 12px );
+                            padding: 0 6px;
+                            justify-content: center;
+                            border: none;
+                            margin: 6px 0;
+                            .circle {
+                                display: none;
+                            }
+                            p {
+                                font-size: 16px;
+                                text-align: center;
+                                color: $grey-700;
+                                border-bottom: 1px solid $grey-300;
+                            }
+                        }
+                    }
+                }
+                @media ( max-width: 800px) {
+                    width: calc( 100% - 12px );
+                    padding: 6px 0;
+                    border: 1px solid $grey-500;
+                }
+            }
+            @media ( max-width: 800px) {
+                width: 100%;
             }
         }
     }

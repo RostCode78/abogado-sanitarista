@@ -132,6 +132,7 @@ const jurista = () => {
         </div>
 
         <div className="informacion">
+
           <div className="left">
             <div className="content-titulo">
                 <h2>Diplomas y constancias</h2>
@@ -144,22 +145,139 @@ const jurista = () => {
                 ))}
             </div>
           </div>
-          <div className="right">
-            <div className="item"></div>
-          </div>
-        </div>
 
-        <div className="certificados">
-            <div className="content-titulo">
-                <h2>Diplomas y constancias</h2>
+          <div className="right">
+
+            <div className="item">
+              <p>Abogado egresado del Inter, Centro de Estudios Superiores, actualmente en espera de aprobación de <span className="negritas negro">Tesis de Especialidad</span> en <span className="negritas negro" >Derecho Sanitario</span> en la <span className="negritas negro" >UNAM</span>, <span className="negritas negro">FES ACATLÁN</span>.</p>
             </div>
-            <div className="content-images">
-                { Diplomas.map( e => (
-                  <div className="item" key={ e.id } onClick={ () => OnClickOpenZoom( e.url_img ) }>
-                    <img src={ e.url_img } alt={ e.alt } />
-                  </div>
-                ))}
+
+            <div className="item">
+              <p>Asesor y abogado postulante en controversias derivadas de la prestación de servicios de salud en el ámbito público y privado, <span className="negritas negro">cofundador de “Grupo Lex Artis Médica”</span>, grupo en donde convergen abogados y profesionales de salud interesados en el desarrollo del derecho sanitario, <span className="negritas negro">fundador del Consejo Mexicano de Derecho Sanitario “CMDS”</span>, <span className="negritas negro">socio de la agencia de gestoría Regulación Sanitaria del Norte “RESAN”</span>.</p>
             </div>
+
+            <div className="item">
+              <p>Dentro de las <span className="negritas negro">actividades recientes más relevantes</span> en materia sanitaria, están la <span className="negritas negro">interposición de juicios amparos para obtener equipo de protección personal, vacunas contra el Covid-19, insumos y atención médica.</span></p>
+            </div>
+
+            <div className="item">
+              <p>También ha sido <span className="negritas negro">abogado postulante en los Despachos Jurídicos Cruz Cantú Abogados, Romero Arroyo & Abogados, Maya y Nehmad Abogados</span>.</p>
+            </div>
+
+            <div className="item">
+              <p>Para sostener una debida praxis legal en materia sanitaria, el Licenciado tiene la siguiente <span className="negritas negro">formación académica</span>:</p>
+            </div>
+
+            <div className="item-list">
+
+              <div className="titulo">
+                <div className="line"/>
+                <p>Especialidad en Derecho Sanitario (en trámite de titulación).</p>
+              </div>
+
+            </div>
+
+            <div className="item-list">
+
+              <div className="titulo">
+                <div className="line"/>
+                <p>Diplomados:</p>
+              </div>
+
+              <div className="list">
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Medidas de Protección ante el Conflicto Médico Paciente.</p>
+                </div>
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Diplomado Mala Praxis y Responsabilidad Médica.</p>
+                </div>
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Diplomado en Derecho Médico.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div className="item-list">
+
+              <div className="titulo">
+                <div className="line"/>
+                <p>Cursos:</p>
+              </div>
+
+              <div className="list">
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Prevención del Conflicto Contra los Profesionales de la Salud.</p>
+                </div>
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Responsabilidad Médica.</p>
+                </div>
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Derecho Penal Médico.</p>
+                </div>
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Despido Injustificado..</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div className="item-list">
+
+              <div className="titulo">
+                <div className="line"/>
+                <p>Seminarios:</p>
+              </div>
+
+              <div className="list">
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Sistema Penal Acusatorio, Adversarial y Oral.</p>
+                </div>
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Juicios Orales en Materia Mercantil y Civil.</p>
+                </div>
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Derecho Procesal Laboral.</p>
+                </div>
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Juicio de Amparo Directo e Indirecto. </p>
+                </div>
+
+                <div className="item-list">
+                  <div className="circle"/>
+                  <p>Juicios Orales en Materia Familiar.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          
         </div>
 
         <div className="slider">

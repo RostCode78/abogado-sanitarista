@@ -7,7 +7,7 @@ import Footer from "./Footer/Footer";
 import SeccionContacto from "./PaginaInicio/Contacto/SeccionContacto";
 import ImageModal from "./ImageModal/ImageModal";
 
-const Layout = ({ children, contacto }) => {
+const Layout = ({ children, contacto="true" }) => {
 
     const ContextApp = useContext(appContext);
     const {
@@ -19,14 +19,14 @@ const Layout = ({ children, contacto }) => {
             { mostrarmodalzoom ? <ImageModal/> : null }
             <Navbar/>
             <MenuLateral/>
-            <div className="content-whatsapp-desktop">
+            <a className="content-whatsapp-desktop" href="https://wa.me/525518100055" target="_blank">
                 <Image
                     src="/whatsapp.svg"
                     width={50}
                     height={50}
                     alt='whatsapp'
                 />
-            </div>
+            </a>
             <main>{ children }</main>
             { contacto ? <SeccionContacto/> : null }
             <Footer/>

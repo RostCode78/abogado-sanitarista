@@ -8,16 +8,16 @@
     @extend %flex-center-column;
     p {
         color: $grey-100;
-        @extend %regular-regular;
+        @extend %small-regular;
     }
     span {
         color: $grey-100;
-        @extend %regular-regular;
+        @extend %small-regular;
         a {
             color: $blue-300;
             text-decoration: underline;
             transition: all .1s ease-in-out;
-            @extend %regular-regular;
+            @extend %small-regular;
             &:hover {
                 color: $blue-400;
             }

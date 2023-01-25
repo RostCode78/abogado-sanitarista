@@ -10,7 +10,7 @@ const SeccionContacto = () => {
             <div className="texto">
                 <h2>Necesitas ayuda con tu caso?</h2>
                 <h3>Yo puedo ayudarte solo necesitas contactarme.</h3>
-                <div className="boton">
+                <a className="boton" href="https://wa.me/525518100055" target="_blank">
                     <p>55 1810 0055</p>
                     <div className="icon">
                         <Image
@@ -20,7 +20,7 @@ const SeccionContacto = () => {
                             alt='whatsapp'
                         />
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     )

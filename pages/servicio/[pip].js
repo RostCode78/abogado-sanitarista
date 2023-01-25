@@ -44,7 +44,7 @@ const servicios = () => {
                         <h1>{ datos.speech }</h1>
                         <h2>Entonces yo te puedo ayudar</h2>
                         <h3>Solo necesitas contactarme</h3>
-                        <div className="boton">
+                        <a className="boton" href="https://wa.me/525518100055" target="_blank">
                             <p>55 1810 0055</p>
                             <div className="icon">
                                 <Image
@@ -54,7 +54,7 @@ const servicios = () => {
                                     alt='whatsapp'
                                 />
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div className="right">
                         <img src={ datos.imagen } alt={ datos.nombre } />
