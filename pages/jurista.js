@@ -161,7 +161,7 @@ const jurista = () => {
             </div>
 
             <div className="item">
-              <p>También ha sido <span className="negritas negro">abogado postulante en los Despachos Jurídicos Cruz Cantú Abogados, Romero Arroyo & Abogados, Maya y Nehmad Abogados</span>.</p>
+              <p>También ha sido <span className="negritas negro">abogado postulante en diversos despachos Jurídicos.</span>.</p>
             </div>
 
             <div className="item">
