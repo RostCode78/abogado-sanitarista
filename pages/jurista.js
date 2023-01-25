@@ -119,38 +119,34 @@ const jurista = () => {
 
         <div className="header">
 
+          <div className="content-texto">
+            <h1>Licenciado Miguel Ángel Rodríguez Corzas.</h1>
+            <h2>Abogado.</h2>
+            <h3>Especialista en Derecho Sanitario y Derecho Médico.</h3>
+          </div>
+
+          <div className="content-imagen">
+            <img src="https://i.imgur.com/03NNUSz.png" alt="Selfie" />
+          </div>
+        
+        </div>
+
+        <div className="informacion">
           <div className="left">
-
-            <div className="titulo">
-              <h1>Lic. en D. Miguel Ángel Rodríguez C.</h1>
-              <h2>Especialista en Derecho Sanitario y Derecho Médico.</h2>
+            <div className="content-titulo">
+                <h2>Diplomas y constancias</h2>
             </div>
-
-            <div className="imagen" onClick={ () => OnClickOpenZoom( "https://i.imgur.com/x0Lag4A.png" ) }>
-              <img src="https://i.imgur.com/x0Lag4A.png" alt="Selfie" />
-            </div>
-
-            <div className="list">
-              <h2>Porque soy tu mejor opcion?</h2>
-
-              { Opciones.map( e => (
-                <>
-                  <div className="item" key={ e.id }>
-                    <div className="circle"></div>
-                    <p>{ e.texto }</p>
+            <div className="content-images">
+                { Diplomas.map( e => (
+                  <div className="item" key={ e.id } onClick={ () => OnClickOpenZoom( e.url_img ) }>
+                    <img src={ e.url_img } alt={ e.alt } />
                   </div>
-                  <div className="line-item"></div>
-                </>
-              ))}
-
+                ))}
             </div>
-
           </div>
-
-          <div className="right" onClick={ () => OnClickOpenZoom( "https://i.imgur.com/x0Lag4A.png" ) }>
-            <img src="https://i.imgur.com/x0Lag4A.png" alt="Selfie" />
+          <div className="right">
+            <div className="item"></div>
           </div>
-
         </div>
 
         <div className="certificados">
