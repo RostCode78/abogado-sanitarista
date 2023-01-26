@@ -5,7 +5,7 @@
     padding: 24px 0;
     justify-content: space-between;
     @extend %flex-center-row;
-    @media ( max-width: 980px ) {
+    @media ( max-width: 980px) {
         flex-direction: column;
     }
     .content-left {
@@ -20,7 +20,7 @@
             font-size: 48px;
             color: $grey-900;
             text-align: center;
-            @media ( max-width: 980px ) {
+            @media ( max-width: 980px) {
                 font-weight: 600;
                 font-size: 36px;
             }
@@ -32,7 +32,7 @@
             margin-top: 12px;
             color: $cafe-600;
             text-align: center;
-            @media ( max-width: 980px ) {
+            @media ( max-width: 980px) {
                 order: -1;
                 margin-top: 0px;
                 margin-bottom: 12px;
@@ -43,7 +43,7 @@
         button {
             width: auto;
             height: auto;
-            padding: 6px 24px;
+            padding: 12px 36px;
             margin-top: 36px;
             background-color: $cafe-500;
             border-radius: 25px;
@@ -60,11 +60,11 @@
             &:hover {
                 background-color: $cafe-600;
             }
-            @media ( max-width: 980px ) {
+            @media ( max-width: 980px) {
                 margin-top: 24px;
             }
         }
-        @media ( max-width: 980px ) {
+        @media ( max-width: 980px) {
             width: 100%;
         }
     }
@@ -73,7 +73,7 @@
         height: 525px;
         background-color: $grey-900;
         @extend %flex-center;
-        @media ( max-width: 980px ) {
+        @media ( max-width: 980px) {
             display: none;
         }
     }
@@ -83,7 +83,7 @@
         background-color: $grey-100;
         display: none;
         @extend %flex-center;
-        @media ( max-width: 980px ) {
+        @media ( max-width: 980px) {
             display: flex;
         }
     }

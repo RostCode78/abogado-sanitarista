@@ -12,7 +12,7 @@ const ServicioEspecial = () => {
             <div className="right">
 
                 <div className="titulo">
-                    <h2>Necesitas algo diferente?</h2>
+                    <h2>¿Necesitas algo diferente?</h2>
                     <h3>Servicio legal especial</h3>
                 </div>
 

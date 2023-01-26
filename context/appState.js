@@ -38,7 +38,7 @@ const AppState = props => {
             {
                 id: 1,
                 nombre: "Para Hospitales, Clínicas y Consultorios.",
-                speech: "Necesitas un servicio para Hospitales, Clínicas o Consultorios?",
+                speech: "¿Necesitas un servicio para Hospitales, Clínicas o Consultorios?",
                 imagen: "https://i.imgur.com/aWfJb6E.jpg",
                 url: "para-hospitales-clinicas-consultorios",
                 servicios: [
@@ -91,7 +91,7 @@ const AppState = props => {
             {
                 id: 2,
                 nombre: "Para Profesionales De La Salud.",
-                speech: "Eres profesional en la salud y necesitas un servicio?",
+                speech: "¿Eres profesional en la salud y necesitas un servicio?",
                 imagen: "https://i.imgur.com/PmFXpVq.jpg",
                 url: "para-profesionales-de-la-salud",
                 servicios: [
@@ -144,7 +144,7 @@ const AppState = props => {
             {
                 id: 3,
                 nombre: "Para Pacientes y Familiares.",
-                speech: "Eres un paciente o un familiar y necesitas un servicio?",
+                speech: "¿Eres un paciente o un familiar y necesitas un servicio?",
                 imagen: "https://i.imgur.com/Bl54VHy.jpg",
                 url: "para-pacientes-familiares",
                 servicios: [
@@ -173,7 +173,7 @@ const AppState = props => {
             {
                 id: 4,
                 nombre: "Cursos, Talleres y Seminarios.",
-                speech: "Necesitas un Curso, Taller o Seminario?",
+                speech: "¿Necesitas un Curso, Taller o Seminario?",
                 imagen: "https://i.imgur.com/8ojlEZn.jpg",
                 url: "cursos-talleres-seminarios",
                 servicios: [
